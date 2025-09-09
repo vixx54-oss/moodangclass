@@ -217,18 +217,17 @@
 }
 
 .story-list {
-  display: flex;
-  flex-wrap: wrap; /* fxww */
   margin-top: 2.5rem;
+  column-count: auto;
+  column-width: 300px; /* 최소크기 */
+  column-gap: 2rem;
 }
 
 .story-list li {
-  flex: 1 1 45%; /* 삼등분도 아니고 이등분도 아닌 그 사이값 넣기 31-49% */
-  aspect-ratio: 1/0.8235;
+  margin-bottom: 2rem;
 }
 
 .story-list figure {
-  overflow: hidden;
 }
 .story-list img {
   object-fit: cover;
@@ -341,7 +340,7 @@
     width: 98.3rem;
     width: 95.9961%;
   }
-/* 
+  /* 
   .team-slider-wrap .swiper-slide {
     min-height: 42rem;
   } */
@@ -352,12 +351,6 @@
 
   .story-best > * {
     flex: 1 1 50%;
-  }
-
-  .story-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
   }
 
   .map {
@@ -411,10 +404,6 @@
   }
   .btn-menu {
     display: none;
-  }
-
-  .story-list li {
-    flex: 1 1 30%;
   }
 
   .contact {
